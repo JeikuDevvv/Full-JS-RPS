@@ -1,3 +1,5 @@
+import { Rock } from "./static/functions.js";
+
 const body = document.body;
 
 const main = document.createElement("main");
@@ -38,7 +40,7 @@ iconRockButton.src = "./assets/icons/rock.png";
 rockButton.append(iconRockButton);
 const buttonTextRock = document.createTextNode("rock");
 rockButton.appendChild(buttonTextRock);
-rockButton.addEventListener("click", nani);
+rockButton.addEventListener("click", Rock);
 
 const paperButton = document.createElement("button");
 paperButton.setAttribute("id", "paper-button");
