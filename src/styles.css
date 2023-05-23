@@ -33,7 +33,6 @@
 }
 
 .arm-container {
-    background-color: red;
     width: 90%;
     height: 80%;
     margin-bottom: 3%;
@@ -47,11 +46,12 @@
 .arm-container div {
     width: 50%;
     height: 100%;
-    background-color: #22423d;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .button-container {
-    background-color: red;
     width: 90%;
     height: 30%;
     display: flex;

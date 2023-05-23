@@ -1,4 +1,4 @@
-import { Rock } from "./static/functions.js";
+import { Rock, Paper, Scissors } from "./static/functions.js";
 
 const body = document.body;
 
@@ -19,12 +19,20 @@ armContainer.setAttribute("class", "arm-container");
 
 const playerOne = document.createElement("div");
 playerOne.setAttribute("class", "player-one");
+const playerOneChoice = document.createElement("img");
+playerOneChoice.setAttribute("id", "player-one-img");
+playerOneChoice.src = "./assets/nani.svg";
+playerOne.append(playerOneChoice);
 
 const vsText = document.createElement("h1");
 vsText.innerText = "V.S";
 
 const playerTwo = document.createElement("div");
 playerTwo.setAttribute("class", "player-two");
+const playerTwoChoice = document.createElement("img");
+playerTwoChoice.setAttribute("id", "player-two-img");
+playerTwoChoice.src = "./assets/nani.svg";
+playerTwo.append(playerTwoChoice);
 
 armContainer.append(playerOne);
 armContainer.append(vsText);
@@ -49,16 +57,18 @@ iconPaperButton.src = "./assets/icons/paper.png";
 paperButton.append(iconPaperButton);
 const buttonTextPaper = document.createTextNode("paper");
 paperButton.appendChild(buttonTextPaper);
+paperButton.addEventListener("click", Paper);
 
-const scissorButton = document.createElement("button");
-scissorButton.setAttribute("id", "scissor-button");
-const iconScissorButton = document.createElement("img");
-iconScissorButton.src = "./assets/icons/scissor.png";
-scissorButton.append(iconScissorButton);
-const buttonTextScissor = document.createTextNode("scissor");
-scissorButton.appendChild(buttonTextScissor);
+const scissorsButton = document.createElement("button");
+scissorsButton.setAttribute("id", "scissors-button");
+const iconScissorsButton = document.createElement("img");
+iconScissorsButton.src = "./assets/icons/scissors.png";
+scissorsButton.append(iconScissorsButton);
+const buttonTextScissors = document.createTextNode("scissor");
+scissorsButton.appendChild(buttonTextScissors);
+scissorsButton.addEventListener("click", Scissors);
 
-buttonContainer.append(rockButton, paperButton, scissorButton);
+buttonContainer.append(rockButton, paperButton, scissorsButton);
 
 rpsContainer.append(armContainer, buttonContainer);
 
