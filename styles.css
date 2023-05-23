@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dekko&display=swap");
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Architects Daughter", cursive;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(199, 233, 176, 1);
+}
+
+.rps-container {
+    width: 35%;
+    height: 40%;
+
+    background: #a4bc92;
+    box-shadow: 10px 8px 5px rgba(164, 188, 146, 0.25);
+    border-radius: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arm-container {
+    background-color: red;
+    width: 90%;
+    height: 80%;
+    margin-bottom: 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.arm-container div {
+    width: 50%;
+    height: 100%;
+    background-color: #22423d;
+}
+
+.button-container {
+    background-color: red;
+    width: 90%;
+    height: 30%;
+}
