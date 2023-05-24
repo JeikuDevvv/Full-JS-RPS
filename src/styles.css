@@ -19,8 +19,8 @@
 }
 
 .rps-container {
-    width: 35%;
-    height: 40%;
+    width: 90%;
+    height: 90%;
 
     background: #a4bc92;
     box-shadow: 10px 8px 5px rgba(164, 188, 146, 0.25);
@@ -66,7 +66,17 @@
     width: 190px;
     height: 55px;
 
+    font-size: xx-large;
     background: #646f5b;
     border-radius: 15px;
     margin: 10px;
+    transition: all 0.3s;
+}
+
+.button-container button:hover {
+    border-radius: 25px;
+    filter: drop-shadow(5px 5px 2px rgba(199, 233, 176, 1));
+    transform: translateY(-10px);
+
+    font-weight: bold;
 }
