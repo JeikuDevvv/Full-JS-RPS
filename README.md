@@ -1,7 +1,7 @@
 <h1 align="center" id="title">Rock Paper Scissors</h1>
 
 <p align="center">
-<img src="./assets/res/FULL-JS-RPS.svg" alt="project-image">
+<img src="./assets/res/gameBanner.svg" alt="project-image">
 </p>
 
 <div align="center">
