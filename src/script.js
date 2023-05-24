@@ -21,7 +21,7 @@ const playerOne = document.createElement("div");
 playerOne.setAttribute("class", "player-one");
 const playerOneChoice = document.createElement("img");
 playerOneChoice.setAttribute("id", "player-one-img");
-playerOneChoice.src = "./assets/nani.svg";
+playerOneChoice.src = "./assets/icons/nani.svg";
 playerOne.append(playerOneChoice);
 
 const vsTextContainer = document.createElement("div");
@@ -35,7 +35,7 @@ const playerTwo = document.createElement("div");
 playerTwo.setAttribute("class", "player-two");
 const playerTwoChoice = document.createElement("img");
 playerTwoChoice.setAttribute("id", "player-two-img");
-playerTwoChoice.src = "./assets/nani.svg";
+playerTwoChoice.src = "./assets/icons/nani.svg";
 playerTwo.append(playerTwoChoice);
 
 armContainer.append(playerOne, vsTextContainer, playerTwo);
