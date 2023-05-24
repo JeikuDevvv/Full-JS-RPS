@@ -25,6 +25,7 @@ playerOneChoice.src = "./assets/nani.svg";
 playerOne.append(playerOneChoice);
 
 const vsText = document.createElement("h1");
+vsText.setAttribute("id", "vsText");
 vsText.innerText = "V.S";
 
 const playerTwo = document.createElement("div");

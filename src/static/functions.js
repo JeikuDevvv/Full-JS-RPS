@@ -27,14 +27,14 @@ function determineWinner(player, computer) {
         (player === "paper" && computer === "rock") ||
         (player === "scissors" && computer === "paper")
     ) {
-        return "Player wins!";
+        return "You wins!";
     } else {
         return "Computer wins!";
     }
 }
 
 function displayResult(result) {
-    console.log(result);
+    document.getElementById("vsText").innerText = `${result}`;
 }
 
 function randomInteger(min, max) {
