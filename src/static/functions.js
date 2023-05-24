@@ -27,7 +27,7 @@ function determineWinner(player, computer) {
         (player === "paper" && computer === "rock") ||
         (player === "scissors" && computer === "paper")
     ) {
-        return "You wins!";
+        return "You win!";
     } else {
         return "Computer wins!";
     }
@@ -52,6 +52,24 @@ async function reloadPage() {
     window.location.reload();
 }
 
+function gameDelay() {
+    const rockButton = document.getElementById("rock-button");
+    const paperButton = document.getElementById("paper-button");
+    const scissorsButton = document.getElementById("scissors-button");
+
+    rockButton.disabled = true;
+    paperButton.disabled = true;
+    scissorsButton.disabled = true;
+
+    reloadPage();
+
+    setTimeout(() => {
+        rockButton.disabled = false;
+        paperButton.disabled = false;
+        scissorsButton.disabled = false;
+    }, 4000);
+}
+
 export const Rock = () => {
     let playerChoice = "rock";
     document.getElementById(
@@ -60,7 +78,7 @@ export const Rock = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
-    reloadPage();
+    gameDelay();
 };
 
 export const Paper = () => {
@@ -71,7 +89,7 @@ export const Paper = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
-    reloadPage();
+    gameDelay();
 };
 
 export const Scissors = () => {
@@ -82,5 +100,5 @@ export const Scissors = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
-    reloadPage();
+    gameDelay();
 };
