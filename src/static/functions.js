@@ -46,7 +46,7 @@ function sleep(ms) {
 }
 
 async function reloadPage() {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 3; i++) {
         await sleep(i * 1000);
     }
     window.location.reload();
