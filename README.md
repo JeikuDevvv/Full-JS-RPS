@@ -9,8 +9,8 @@
     </a>
     <div>
         <img src="https://img.shields.io/github/license/JeikuDevvv/Full-JS-RPS?color=646F5B&amp;style=for-the-badge" alt="shields">
-<img src="https://img.shields.io/website?style=for-the-badge&amp;up_color=646F5B&amp;url=https%3A%2F%2Fjeikudevvv.github.io%2FFull-JS-RPS%2F" alt="shields">
-<img alt="languages" src="https://img.shields.io/github/languages/top/JeikuDevvv/Full-JS-RPS?color=646F5B&amp;style=for-the-badge"/>
+        <img src="https://img.shields.io/website?style=for-the-badge&amp;up_color=646F5B&amp;url=[https%3A%2F%2Fjeikudevvv.github.io%2FFull-JS-RPS%2F](https://jeikudevvv.github.io/Full-JS-RPS/)" alt="shields">
+        <img alt="languages" src="https://img.shields.io/github/languages/top/JeikuDevvv/Full-JS-RPS?color=646F5B&amp;style=for-the-badge"/>
     </div>
 
 </div>
