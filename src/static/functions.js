@@ -41,6 +41,17 @@ function randomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function reloadPage() {
+    for (let i = 0; i < 2; i++) {
+        await sleep(i * 1000);
+    }
+    window.location.reload();
+}
+
 export const Rock = () => {
     let playerChoice = "rock";
     document.getElementById(
@@ -49,6 +60,7 @@ export const Rock = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
+    reloadPage();
 };
 
 export const Paper = () => {
@@ -59,6 +71,7 @@ export const Paper = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
+    reloadPage();
 };
 
 export const Scissors = () => {
@@ -69,4 +82,5 @@ export const Scissors = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
+    reloadPage();
 };
