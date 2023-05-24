@@ -1,8 +1,7 @@
 <h1 align="center" id="title">Rock Paper Scissors</h1>
 
 <p align="center">
-<img src="https://socialify.git.ci/JeikuDevvv/Full-JS-RPS/image?description=1&amp;descriptionEditable=A%20Simple%20Game%20(Rock%2C%20Paper%2C%20Scissors)%20Develop
-ed%20using%20Full%20JavaScript&amp;font=Jost&amp;language=1&amp;logo=https%3A%2F%2Fraw.githubusercontent.com%2FJeikuDevvv%2FFull-JS-RPS%2F70e3132bf50f939a37a453cda00982eb481f3601%2Fassets%2FIcon.svg&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Dark" alt="project-image">
+<img src="./assets/res/FULL-JS-RPS.svg" alt="project-image">
 </p>
 
 <div align="center">
