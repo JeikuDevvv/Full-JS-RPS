@@ -47,13 +47,18 @@ function createButtons() {
         Scissors: rScissors,
     };
 
+    function convertFirstLetterToLowerCase(str) {
+        return str.charAt(0).toLowerCase() + str.slice(1);
+    }
+
     for (let i = 1; i <= 3; i++) {
         const button = document.createElement("button");
         const iconButton = document.createElement("img");
         const buttonId = `${buttonLabels[i]}-button`;
 
         button.innerText = buttonLabels[i];
-        iconButton.src = `./assets/icons/${buttonLabels[i]}.png`;
+        const convertedString = convertFirstLetterToLowerCase(buttonLabels[i]);
+        iconButton.src = `./assets/icons/${convertedString}.png`;
 
         button.id = buttonId;
         button.appendChild(iconButton);
