@@ -42,22 +42,27 @@ buttonContainer.setAttribute("class", "button-container");
 function createButtons() {
     for (let i = 1; i <= 3; i++) {
         const button = document.createElement("button");
+        const iconPaperButton = document.createElement("img");
         const buttonLabel = ["uwu", "rock", "paper", "scissors"];
         let buttonId = "";
         if (i === 1) {
             buttonId = `${buttonLabel[1]}-button`;
             button.innerText = `${buttonLabel[1]}`;
+            iconPaperButton.src = `./assets/icons/${buttonLabel[1]}.png`;
         }
         if (i === 2) {
             buttonId = `${buttonLabel[2]}-button`;
             button.innerText = `${buttonLabel[2]}`;
+            iconPaperButton.src = `./assets/icons/${buttonLabel[2]}.png`;
         }
         if (i === 3) {
             buttonId = `${buttonLabel[3]}-button`;
             button.innerText = `${buttonLabel[3]}`;
+            iconPaperButton.src = `./assets/icons/${buttonLabel[3]}.png`;
         }
 
         button.id = buttonId;
+        button.append(iconPaperButton);
         buttonContainer.append(button);
     }
 }
