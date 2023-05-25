@@ -1,4 +1,9 @@
-import { Rock, Paper, Scissors } from "./static/functions.js";
+import {
+    generateComputerChoice,
+    determineWinner,
+    displayResult,
+    gameDelay,
+} from "./static/rpsLogic.js";
 
 const body = document.body;
 
@@ -40,30 +45,64 @@ const buttonContainer = document.createElement("div");
 buttonContainer.setAttribute("class", "button-container");
 
 function createButtons() {
+    const buttonLabels = ["", "Rock", "Paper", "Scissors"];
+    const buttonFunctions = {
+        Rock: Rock,
+        Paper: Paper,
+        Scissors: Scissors,
+    };
+
     for (let i = 1; i <= 3; i++) {
         const button = document.createElement("button");
-        const iconPaperButton = document.createElement("img");
-        const buttonLabel = ["uwu", "rock", "paper", "scissors"];
-        let buttonId = "";
-        if (i === 1) {
-            buttonId = `${buttonLabel[1]}-button`;
-            button.innerText = `${buttonLabel[1]}`;
-            iconPaperButton.src = `./assets/icons/${buttonLabel[1]}.png`;
-        }
-        if (i === 2) {
-            buttonId = `${buttonLabel[2]}-button`;
-            button.innerText = `${buttonLabel[2]}`;
-            iconPaperButton.src = `./assets/icons/${buttonLabel[2]}.png`;
-        }
-        if (i === 3) {
-            buttonId = `${buttonLabel[3]}-button`;
-            button.innerText = `${buttonLabel[3]}`;
-            iconPaperButton.src = `./assets/icons/${buttonLabel[3]}.png`;
-        }
+        const iconButton = document.createElement("img");
+        const buttonId = `${buttonLabels[i]}-button`;
+
+        button.innerText = buttonLabels[i];
+        iconButton.src = `./assets/icons/${buttonLabels[i]}.png`;
 
         button.id = buttonId;
-        button.append(iconPaperButton);
-        buttonContainer.append(button);
+        button.appendChild(iconButton);
+        buttonContainer.appendChild(button);
+
+        button.addEventListener("click", function () {
+            buttonFunctions[buttonLabels[i]]();
+        });
+    }
+
+    function Rock() {
+        const playerChoice = "rock";
+        const playerImg = document.getElementById("player-one-img");
+        playerImg.src = `./assets/hands/${playerChoice}.svg`;
+
+        const computerChoice = generateComputerChoice();
+        const winner = determineWinner(playerChoice, computerChoice);
+        displayResult(winner);
+
+        setTimeout(gameDelay, 3000);
+    }
+
+    function Paper() {
+        const playerChoice = "rock";
+        const playerImg = document.getElementById("player-one-img");
+        playerImg.src = `./assets/hands/${playerChoice}.svg`;
+
+        const computerChoice = generateComputerChoice();
+        const winner = determineWinner(playerChoice, computerChoice);
+        displayResult(winner);
+
+        setTimeout(gameDelay, 3000);
+    }
+
+    function Scissors() {
+        const playerChoice = "rock";
+        const playerImg = document.getElementById("player-one-img");
+        playerImg.src = `./assets/hands/${playerChoice}.svg`;
+
+        const computerChoice = generateComputerChoice();
+        const winner = determineWinner(playerChoice, computerChoice);
+        displayResult(winner);
+
+        setTimeout(gameDelay, 3000);
     }
 }
 

@@ -1,4 +1,4 @@
-function generateComputerChoice() {
+export function generateComputerChoice() {
     let choices = ["rock", "paper", "scissors"];
     let randomIndex = randomInteger(0, 2);
     if (choices[randomIndex] === "rock") {
@@ -19,7 +19,7 @@ function generateComputerChoice() {
     return choices[randomIndex];
 }
 
-function determineWinner(player, computer) {
+export function determineWinner(player, computer) {
     if (player === computer) {
         return "It's a tie!";
     } else if (
@@ -33,7 +33,7 @@ function determineWinner(player, computer) {
     }
 }
 
-function displayResult(result) {
+export function displayResult(result) {
     document.getElementById("vsText").innerText = `${result}`;
 }
 
@@ -52,7 +52,7 @@ async function reloadPage() {
     window.location.reload();
 }
 
-function gameDelay() {
+export function gameDelay() {
     const rockButton = document.getElementById("rock-button");
     const paperButton = document.getElementById("paper-button");
     const scissorsButton = document.getElementById("scissors-button");
@@ -67,38 +67,5 @@ function gameDelay() {
         rockButton.disabled = false;
         paperButton.disabled = false;
         scissorsButton.disabled = false;
-    }, 4000);
+    }, this.props.delaySec);
 }
-
-export const Rock = () => {
-    let playerChoice = "rock";
-    document.getElementById(
-        "player-one-img"
-    ).src = `./assets/hands/${playerChoice}.svg`;
-    let computerChoice = generateComputerChoice();
-    let winner = determineWinner(playerChoice, computerChoice);
-    displayResult(winner);
-    gameDelay();
-};
-
-export const Paper = () => {
-    let playerChoice = "paper";
-    document.getElementById(
-        "player-one-img"
-    ).src = `./assets/hands/${playerChoice}.svg`;
-    let computerChoice = generateComputerChoice();
-    let winner = determineWinner(playerChoice, computerChoice);
-    displayResult(winner);
-    gameDelay();
-};
-
-export const Scissors = () => {
-    let playerChoice = "scissors";
-    document.getElementById(
-        "player-one-img"
-    ).src = `./assets/hands/${playerChoice}.svg`;
-    let computerChoice = generateComputerChoice();
-    let winner = determineWinner(playerChoice, computerChoice);
-    displayResult(winner);
-    gameDelay();
-};
