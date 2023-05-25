@@ -8,10 +8,6 @@ main.style.cssText = `
     background-image: url("./assets/background.svg");
 `;
 
-function nani() {
-    alert("nani");
-}
-
 const rpsContainer = document.createElement("div");
 rpsContainer.setAttribute("class", "rps-container");
 const armContainer = document.createElement("div");
@@ -43,34 +39,30 @@ armContainer.append(playerOne, vsTextContainer, playerTwo);
 const buttonContainer = document.createElement("div");
 buttonContainer.setAttribute("class", "button-container");
 
-const rockButton = document.createElement("button");
-rockButton.setAttribute("id", "rock-button");
-const iconRockButton = document.createElement("img");
-iconRockButton.src = "./assets/icons/rock.png";
-rockButton.append(iconRockButton);
-const buttonTextRock = document.createTextNode("rock");
-rockButton.appendChild(buttonTextRock);
-rockButton.addEventListener("click", Rock);
+function createButtons() {
+    for (let i = 1; i <= 3; i++) {
+        const button = document.createElement("button");
+        const buttonLabel = ["uwu", "rock", "paper", "scissors"];
+        let buttonId = "";
+        if (i === 1) {
+            buttonId = `${buttonLabel[1]}-button`;
+            button.innerText = `${buttonLabel[1]}`;
+        }
+        if (i === 2) {
+            buttonId = `${buttonLabel[2]}-button`;
+            button.innerText = `${buttonLabel[2]}`;
+        }
+        if (i === 3) {
+            buttonId = `${buttonLabel[3]}-button`;
+            button.innerText = `${buttonLabel[3]}`;
+        }
 
-const paperButton = document.createElement("button");
-paperButton.setAttribute("id", "paper-button");
-const iconPaperButton = document.createElement("img");
-iconPaperButton.src = "./assets/icons/paper.png";
-paperButton.append(iconPaperButton);
-const buttonTextPaper = document.createTextNode("paper");
-paperButton.appendChild(buttonTextPaper);
-paperButton.addEventListener("click", Paper);
+        button.id = buttonId;
+        buttonContainer.append(button);
+    }
+}
 
-const scissorsButton = document.createElement("button");
-scissorsButton.setAttribute("id", "scissors-button");
-const iconScissorsButton = document.createElement("img");
-iconScissorsButton.src = "./assets/icons/scissors.png";
-scissorsButton.append(iconScissorsButton);
-const buttonTextScissors = document.createTextNode("scissor");
-scissorsButton.appendChild(buttonTextScissors);
-scissorsButton.addEventListener("click", Scissors);
-
-buttonContainer.append(rockButton, paperButton, scissorsButton);
+createButtons();
 
 rpsContainer.append(armContainer, buttonContainer);
 
