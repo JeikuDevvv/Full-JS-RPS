@@ -8,9 +8,9 @@
         <a target="blank" rel="noopener noreferrer" href="https://jeikudevvv.github.io/Full-JS-RPS/"><img src="./preview.png" alt="pomoDuro">
     </a>
     <div>
-        <img src="https://img.shields.io/github/license/JeikuDevvv/Full-JS-RPS?color=646F5B&amp;style=for-the-badge" alt="shields">
-        <img src="https://img.shields.io/website?style=for-the-badge&up_color=646F5B&url=https%3A%2F%2Fjeikudevvv.github.io%2FFull-JS-RPS%2F">
-        <img alt="languages" src="https://img.shields.io/github/languages/top/JeikuDevvv/Full-JS-RPS?color=646F5B&amp;style=for-the-badge"/>
+        <img src="https://img.shields.io/github/license/JeikuDevvv/RPS?color=646F5B&amp;style=for-the-badge" alt="shields">
+        <img src="https://img.shields.io/website?style=for-the-badge&up_color=A4BC92&url=https%3A%2F%2Fjeikudevvv.github.io%2FRPS%2F" href="https://jeikudevvv.github.io/RPS/">
+        <img alt="languages" src="https://img.shields.io/github/languages/top/JeikuDevvv/RPS?color=646F5B&amp;style=for-the-badge" href="[javascript.com](https://www.javascript.com/)"/>
     </div>
 
 </div>
