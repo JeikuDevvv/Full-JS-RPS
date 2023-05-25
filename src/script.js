@@ -1,9 +1,4 @@
-import {
-    generateComputerChoice,
-    determineWinner,
-    displayResult,
-    gameDelay,
-} from "./static/rpsLogic.js";
+import { Paper, Rock, Scissors } from "./functions/buttonFunctions.js";
 
 const body = document.body;
 
@@ -22,7 +17,7 @@ const playerOne = document.createElement("div");
 playerOne.setAttribute("class", "player-one");
 const playerOneChoice = document.createElement("img");
 playerOneChoice.setAttribute("id", "player-one-img");
-playerOneChoice.src = "./assets/icons/nani.svg";
+playerOneChoice.src = "./assets/icons/question.svg";
 playerOne.append(playerOneChoice);
 
 const vsTextContainer = document.createElement("div");
@@ -36,7 +31,7 @@ const playerTwo = document.createElement("div");
 playerTwo.setAttribute("class", "player-two");
 const playerTwoChoice = document.createElement("img");
 playerTwoChoice.setAttribute("id", "player-two-img");
-playerTwoChoice.src = "./assets/icons/nani.svg";
+playerTwoChoice.src = "./assets/icons/question.svg";
 playerTwo.append(playerTwoChoice);
 
 armContainer.append(playerOne, vsTextContainer, playerTwo);
@@ -47,9 +42,9 @@ buttonContainer.setAttribute("class", "button-container");
 function createButtons() {
     const buttonLabels = ["", "Rock", "Paper", "Scissors"];
     const buttonFunctions = {
-        Rock: Rock,
-        Paper: Paper,
-        Scissors: Scissors,
+        Rock: rRock,
+        Paper: rPaper,
+        Scissors: rScissors,
     };
 
     for (let i = 1; i <= 3; i++) {
@@ -63,46 +58,21 @@ function createButtons() {
         button.id = buttonId;
         button.appendChild(iconButton);
         buttonContainer.appendChild(button);
-
-        button.addEventListener("click", function () {
-            buttonFunctions[buttonLabels[i]]();
-        });
+        button.addEventListener("click", () =>
+            buttonFunctions[buttonLabels[i]]()
+        );
     }
 
-    function Rock() {
-        const playerChoice = "rock";
-        const playerImg = document.getElementById("player-one-img");
-        playerImg.src = `./assets/hands/${playerChoice}.svg`;
-
-        const computerChoice = generateComputerChoice();
-        const winner = determineWinner(playerChoice, computerChoice);
-        displayResult(winner);
-
-        setTimeout(gameDelay, 3000);
+    function rRock() {
+        Rock();
     }
 
-    function Paper() {
-        const playerChoice = "rock";
-        const playerImg = document.getElementById("player-one-img");
-        playerImg.src = `./assets/hands/${playerChoice}.svg`;
-
-        const computerChoice = generateComputerChoice();
-        const winner = determineWinner(playerChoice, computerChoice);
-        displayResult(winner);
-
-        setTimeout(gameDelay, 3000);
+    function rPaper() {
+        Paper();
     }
 
-    function Scissors() {
-        const playerChoice = "rock";
-        const playerImg = document.getElementById("player-one-img");
-        playerImg.src = `./assets/hands/${playerChoice}.svg`;
-
-        const computerChoice = generateComputerChoice();
-        const winner = determineWinner(playerChoice, computerChoice);
-        displayResult(winner);
-
-        setTimeout(gameDelay, 3000);
+    function rScissors() {
+        Scissors();
     }
 }
 
