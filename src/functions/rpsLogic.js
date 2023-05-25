@@ -8,6 +8,10 @@ export function generateComputerChoice() {
     return choices[randomIndex];
 }
 
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 export function determineWinner(player, computer) {
     if (player === computer) {
         return "It's a tie!";
@@ -27,30 +31,4 @@ export function displayResult(result) {
     if (vsText) {
         vsText.innerText = result;
     }
-}
-
-function randomInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-export async function gameDelay() {
-    const rockButton = document.getElementById("rock-button");
-    const paperButton = document.getElementById("paper-button");
-    const scissorsButton = document.getElementById("scissors-button");
-
-    if (rockButton && paperButton && scissorsButton) {
-        rockButton.disabled = true;
-        paperButton.disabled = true;
-        scissorsButton.disabled = true;
-
-        await sleep(3000);
-
-        rockButton.disabled = false;
-        paperButton.disabled = false;
-        scissorsButton.disabled = false;
-    }
-}
-
-function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
 }

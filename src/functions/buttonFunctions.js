@@ -2,7 +2,6 @@ import {
     generateComputerChoice,
     determineWinner,
     displayResult,
-    gameDelay,
 } from "./rpsLogic.js";
 
 export const Rock = () => {
@@ -13,7 +12,6 @@ export const Rock = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
-    gameDelay();
 };
 
 export const Paper = () => {
@@ -24,7 +22,6 @@ export const Paper = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
-    gameDelay();
 };
 
 export const Scissors = () => {
@@ -35,5 +32,4 @@ export const Scissors = () => {
     let computerChoice = generateComputerChoice();
     let winner = determineWinner(playerChoice, computerChoice);
     displayResult(winner);
-    gameDelay();
 };
