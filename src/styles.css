@@ -67,7 +67,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 190px;
+    width: 15%;
     height: 55px;
 
     font-size: xx-large;
@@ -79,6 +79,7 @@
 
 .button-container button img {
     height: 90%;
+    margin-left: 5%;
 }
 
 .button-container button:hover {
