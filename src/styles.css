@@ -75,6 +75,8 @@
     border-radius: 15px;
     margin: 10px;
     transition: all 0.3s;
+
+    cursor: pointer;
 }
 
 .button-container button img {

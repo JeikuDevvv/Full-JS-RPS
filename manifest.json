@@ -1,0 +1,17 @@
+{
+    "name": "JavaScript Rock Paper Scissors",
+    "short_name": "RPS",
+    "display": "browser",
+    "start_url": "index.html",
+    "background_color": "#C7E9B0",
+    "icons": [
+        {
+            "src": "res/icons/icon.svg",
+            "sizes": "256x256"
+        },
+        {
+            "src": "res/icons/icon.svg",
+            "sizes": "128x128"
+        }
+    ]
+}
