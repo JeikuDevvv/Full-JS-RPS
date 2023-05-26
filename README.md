@@ -1,8 +1,8 @@
 <h1 align="center" id="title" style="font-family: 'Dekko', cursive; font-size: 50px; color: #A4BC92"><strong>Rock Paper Scissors</strong></h1>
 
-<div style="justify-content: center; text-align: center; font-family: 'Dekko', cursive;"> 
+<div align="center"> 
     <p align="center" style="display: flex; margin: 10px; gap: 20px;">
-        <div style="display: flex; margin: 10px; gap: 20px;">
+        <div>
             <a href="https://jeikudevvv.github.io/RPS/"><img src="./assets/readme/logo.png" alt="RPS" width="250" height="auto"></a>
             <a href="https://javascript.com/"><img src="./assets/readme/javascript.png" alt="RPS" width="250" height="auto"></a>
         </div>
@@ -14,7 +14,7 @@
     </p>
 </div>
 
-<div align="center" style="margin-top: 5%; font-family: 'Dekko', cursive;">
+<div align="center">
         <p> Game Preview </p>
         <a target="blank" rel="noopener noreferrer" href="https://jeikudevvv.github.io/RPS/"><img src="./assets/preview/screenshot1.png" alt="RPS">
         </a>
