@@ -1,11 +1,21 @@
-<h1 align="center" id="title"><strong>Rock Paper Scissors</strong></h1>
+<h1 align="center" id="title" style="font-family: 'Dekko', cursive; font-size: 50px; color: #A4BC92"><strong>Rock Paper Scissors</strong></h1>
 
-<p align="center">
-<img src="./assets/res/gameBanner.svg" alt="project-image" >
-</p>
+<div style="justify-content: center; text-align: center; font-family: 'Dekko', cursive;"> 
+    <p align="center" style="display: flex; margin: 10px; gap: 20px;">
+        <div style="display: flex; margin: 10px; gap: 20px;">
+            <a href="https://jeikudevvv.github.io/RPS/"><img src="./assets/readme/logo.png" alt="RPS" width="250" height="auto"></a>
+            <a href="https://javascript.com/"><img src="./assets/readme/javascript.png" alt="RPS" width="250" height="auto"></a>
+        </div>
+        <div>
+            <h1>JavaScript RPS</h1>
+            <p">by Jeiku Dev</p>
+            <h3 style="align: center">A well-known child game, Developed using full JavaScript<h3>
+        </div>
+    </p>
+</div>
 
-<div align="center" style="margin-top: 5%">
-        <h3> Game Preview </h3>
+<div align="center" style="margin-top: 5%; font-family: 'Dekko', cursive;">
+        <p> Game Preview </p>
         <a target="blank" rel="noopener noreferrer" href="https://jeikudevvv.github.io/RPS/"><img src="./assets/preview/screenshot1.png" alt="RPS">
         </a>
         <a target="blank" rel="noopener noreferrer" href="https://jeikudevvv.github.io/RPS/"><img src="./assets/preview/screenshot2.png" alt="RPS">
@@ -22,6 +32,7 @@
 
 </div>
 
+<div style="font-family: 'Dekko', cursive;"> 
 <h2>✨ Features</h2>
 
 -   The game?
@@ -56,3 +67,5 @@
 <h2>🛡️ License</h2>
 
 This project is licensed under the [MIT License](./LICENSE).
+
+</div>
