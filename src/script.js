@@ -11,7 +11,7 @@ main.style.cssText = `
 const rpsContainer = document.createElement("div");
 rpsContainer.setAttribute("class", "rps-container");
 
-const armContainer = document.createElement("div");
+export const armContainer = document.createElement("div");
 armContainer.setAttribute("class", "arm-container");
 
 const playerOne = document.createElement("div");
@@ -85,11 +85,11 @@ function createButtons() {
 // Create Elements
 createButtons();
 
-// Styles
-styles();
-
 // Apending
 rpsContainer.append(armContainer, buttonContainer);
 
 main.append(rpsContainer);
 body.append(main);
+
+// Styles
+styles();

@@ -1,5 +1,13 @@
 const buttonCSS = {
-    choicesButton: {
+    ButtonContainer: {
+        width: "90%",
+        height: "30%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginLeft: "10px",
+    },
+    Button: {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -8,15 +16,13 @@ const buttonCSS = {
         fontSize: "xx-large",
         background: "#646f5b",
         borderRadius: "25px",
-        margin: "10px",
-        transition: "all 0.3s",
-        whiteSpace: "normal",
         cursor: "pointer",
         fontFamily: '"Architects Daughter", cursive',
     },
-    choicesButtonIcon: {
+    ButtonIcon: {
         height: "100%",
         width: "auto",
+        objectFit: "contain",
     },
 };
 

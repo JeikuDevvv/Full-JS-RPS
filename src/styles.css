@@ -46,10 +46,3 @@
 .arm-container div img {
     width: 90%;
 }
-
-.button-container {
-    width: 90%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-}

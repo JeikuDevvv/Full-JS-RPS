@@ -36,7 +36,7 @@ _No copyright infringement is intended. The Rock Paper Scissors game concept is 
 
 <hr>
 
-## [Prototype] - Friday, May 26, 2023
+## [Prototype] - Friday, May 25, 2023
 
 -   Pre release
 
