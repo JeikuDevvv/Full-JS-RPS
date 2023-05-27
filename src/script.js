@@ -1,4 +1,5 @@
 import { Paper, Rock, Scissors } from "./functions/buttonFunctions.js";
+import { choicesButtonStyles } from "./styles/styles.js";
 
 const body = document.body;
 
@@ -36,7 +37,7 @@ playerTwo.append(playerTwoChoice);
 
 armContainer.append(playerOne, vsTextContainer, playerTwo);
 
-const buttonContainer = document.createElement("div");
+export const buttonContainer = document.createElement("div");
 buttonContainer.setAttribute("class", "button-container");
 
 function createButtons() {
@@ -82,6 +83,9 @@ function createButtons() {
 }
 
 createButtons();
+
+// Styles
+choicesButtonStyles();
 
 rpsContainer.append(armContainer, buttonContainer);
 
