@@ -1,4 +1,4 @@
-const JStyles = {
+const buttonCSS = {
     choicesButton: {
         display: "flex",
         justifyContent: "center",
@@ -19,4 +19,4 @@ const JStyles = {
     },
 };
 
-export default JStyles;
+export default buttonCSS;

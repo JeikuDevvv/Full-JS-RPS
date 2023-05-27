@@ -1,6 +1,5 @@
 import { Paper, Rock, Scissors } from "./functions/buttonFunctions.js";
-import { choicesButtonStyles } from "./styles/styles.js";
-
+import { styles } from "./styles/styles.js";
 const body = document.body;
 
 const main = document.createElement("main");
@@ -11,6 +10,7 @@ main.style.cssText = `
 
 const rpsContainer = document.createElement("div");
 rpsContainer.setAttribute("class", "rps-container");
+
 const armContainer = document.createElement("div");
 armContainer.setAttribute("class", "arm-container");
 
@@ -82,11 +82,13 @@ function createButtons() {
     }
 }
 
+// Create Elements
 createButtons();
 
 // Styles
-choicesButtonStyles();
+styles();
 
+// Apending
 rpsContainer.append(armContainer, buttonContainer);
 
 main.append(rpsContainer);
