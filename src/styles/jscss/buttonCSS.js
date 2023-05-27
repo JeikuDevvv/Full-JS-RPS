@@ -12,6 +12,7 @@ const buttonCSS = {
         transition: "all 0.3s",
         whiteSpace: "normal",
         cursor: "pointer",
+        fontFamily: '"Architects Daughter", cursive',
     },
     choicesButtonIcon: {
         height: "100%",
