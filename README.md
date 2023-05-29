@@ -2,7 +2,6 @@
     <a href="https://jeikudevvv.github.io/RPS/"><img src="./assets/readme/logo.png" alt="RPS" width="250" height="auto"></a>
 </p>
 
-
 <div align="center">
         <h1>JavaScript RPS</h1>
         <p>by Jeiku Dev</p>
@@ -28,7 +27,7 @@
 <div > 
 <h2>✨ Features</h2>
 
--   The game?
+-   uwu
 
 #### 🔜 Soon
 
