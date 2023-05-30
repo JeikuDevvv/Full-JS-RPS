@@ -4,7 +4,7 @@
 
 <div align="center">
         <h1>JavaScript RPS</h1>
-        <p>by Jeiku Dev</p>
+        <p>by Jeiku Devvv</p>
         <h3 style="align: center">A well-known child game, Developed using full JavaScript<h3>
         <p> Game Preview </p>
         <a target="blank" rel="noopener noreferrer" href="https://jeikudevvv.github.io/RPS/"><img src="./assets/preview/screenshot1.png" alt="RPS"  width="400" height="auto"
