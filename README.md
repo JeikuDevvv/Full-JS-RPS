@@ -37,6 +37,7 @@
 
 #### 🥅 Goal
 
+-   Real Time Chat
 -   Multiplayer
 
 <hr>
